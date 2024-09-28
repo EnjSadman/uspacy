@@ -30,6 +30,7 @@
 
 body {
   background-color: var(--color-black);
+  position: relative;
 }
 
 .montserrat {
@@ -65,18 +66,30 @@ body {
   background-color: var(--button-bg-hover);
 }
 
-.button-white:active {
-  background-color: var(--button-bg-done);
+
+
+@media (min-width: 1024px) {
+
 }
 
-.button-purple {
-  background-color: var(--button-bg-done);
-  color: var(--button-text-done);
+@media (min-width: 768px) and (max-width: 1023px) {
+
 }
 
-.button-purple:disabled {
-  background-color: var(--button-bg-disabled);
-  color: var(--button-text-disabled);
+@media (max-width: 767px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+
 }
 
 
