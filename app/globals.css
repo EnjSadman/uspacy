@@ -66,7 +66,15 @@ body {
   background-color: var(--button-bg-hover);
 }
 
+.button-purple {
+  background-color: var(--button-bg-done);
+  color: var(--button-text-done);
+}
 
+.button-purple:disabled {
+  background-color: var(--button-bg-disabled);
+  color: var(--button-text-disabled);
+}
 
 @media (min-width: 1024px) {
 

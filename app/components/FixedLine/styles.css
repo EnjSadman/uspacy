@@ -1,0 +1,24 @@
+.fixedLine__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  position: sticky;
+  bottom: 0;
+  left: 0;
+
+  max-width: unset;
+  width: 100vw;
+  height: 46px;
+  background-color: var(--container-fixed-bottom-bg);
+
+  color: var(--color-white);
+  line-height: 0.9;
+}
+
+.fixedLine__whiteLine {
+  width: 38px;
+  height: 1.5px;
+  background-color: var(--color-white);
+}

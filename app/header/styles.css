@@ -1,0 +1,10 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+
+  position: sticky;
+
+  max-width: 1400px;
+
+  top: 6%;
+}

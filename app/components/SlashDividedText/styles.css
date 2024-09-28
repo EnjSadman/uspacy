@@ -1,0 +1,25 @@
+.dividedText {
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  gap: 40px;
+
+  color: var(--color-white);
+
+  margin-bottom: 36px;
+}
+
+.dividedText__slash {
+  position: absolute;
+  width: 48px;
+  height: 2px;
+
+  left: 50%;
+  right: 50%;
+
+  background-color: var(--color-white);
+
+  transform: rotate(300deg) translateX(-25%);
+}
