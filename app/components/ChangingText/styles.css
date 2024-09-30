@@ -4,6 +4,9 @@
   font-size: 120px;
   text-align: center;
 
+  letter-spacing: -10px;
+  line-height: 0.8;
+
   margin-bottom: 58px;
 }
 
@@ -13,8 +16,18 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 460px) and (max-width: 767px) {
   .change {
-    font-size: 50px;
+    margin-bottom: 36px;
+    font-size: 60px;
+    letter-spacing: -5px;
+  }
+}
+
+@media (max-width: 459px) {
+  .change {
+    font-size: 46px;
+    letter-spacing: -5px;
+    margin-bottom: 36px;
   }
 }

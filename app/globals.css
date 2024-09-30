@@ -10,12 +10,14 @@
 :root {
   --color-white: #ffffff;
   --color-black: #070707;
+  --color-yellow: #fcb02d;
 
 
   --button-bg-default: #ffffff;
   --button-bg-done: #452af4;
   --button-bg-hover: #fcb02d;
   --button-bg-disabled: #452af4;
+  --button-purple-bg-hover: #3315f8;
 
   --button-text-default: #070707;
   --button-text-done: #ffffff;
@@ -29,6 +31,10 @@
 }
 
 body {
+  background-image: url("../public/images/main_bcg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 23%;
   background-color: var(--color-black);
   position: relative;
 }
@@ -49,6 +55,8 @@ body {
 .button {
   width: 214px;
   height: 58px;
+
+  flex-shrink: 0;
 
   text-transform: none;
 
@@ -76,6 +84,29 @@ body {
   color: var(--button-text-disabled);
 }
 
+.invisibleInput {
+  width: 1px;
+  height: 1px;
+  visibility:hidden;
+  cursor: default;
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+  .button {
+    width: 128px;
+    height: 48px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 459px) {
+  .button {
+    width: 128px;
+    height: 48px;
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 1024px) {
 
 }
@@ -84,21 +115,12 @@ body {
 
 }
 
-@media (max-width: 767px) {
+@media (min-width: 460px) and (max-width: 767px) {
 
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 459px) {
 
 }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-@media (max-width: 767px) {
-
-}
-
 
 

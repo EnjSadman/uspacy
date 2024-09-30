@@ -6,12 +6,14 @@ import { Button } from "@mui/material";
 interface Props {
   text: string,
   clickEventFunction: (() => void) | null;
+  disabled: boolean;
 }
 
-export function ButtonRegisterPurple({text, clickEventFunction} : Props) {
+export function ButtonPurple({text, clickEventFunction, disabled} : Props) {
   return (
     <Button
       className="button button-purple"
+      disabled={disabled}
       onClick={() => {
         if (clickEventFunction !== null) {
           clickEventFunction();

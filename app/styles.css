@@ -1,4 +1,21 @@
-.container-row-flex-centered {
+.container-flex-col-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register__container {
+  height: 100vh;
+
   display: flex;
   justify-content: center;
 }
+
+.first-screen {
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+

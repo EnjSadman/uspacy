@@ -5,6 +5,7 @@ import './styles.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button, Container } from '@mui/material';
+import { scrollToAnchor } from '../lib/scrollToAncror';
 
 export function Header() {
   return(
@@ -23,6 +24,9 @@ export function Header() {
         <Button
           className='button button-white'
           variant='contained'
+          onClick={() => {
+            scrollToAnchor("register");
+          }}
         >
           Зареєструватися
         </Button>

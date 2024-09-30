@@ -9,6 +9,7 @@
   color: var(--color-white);
 
   margin-bottom: 36px;
+  margin-top: 12vh;
 }
 
 .dividedText__slash {
@@ -22,4 +23,10 @@
   background-color: var(--color-white);
 
   transform: rotate(300deg) translateX(-25%);
+}
+
+@media (max-width: 459px) {
+  .dividedText {
+    font-size: 16px;
+  }
 }

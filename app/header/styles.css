@@ -1,10 +1,30 @@
-.header__container {
-  display: flex;
-  justify-content: space-between;
-
+.header {
   position: sticky;
 
-  max-width: 1400px;
+  z-index: 3;
 
   top: 6%;
+  left: 0;
+}
+
+.header__container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1400px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 459px) {
+
 }

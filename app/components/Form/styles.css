@@ -1,0 +1,136 @@
+.form__container {
+  position: relative;
+  z-index: 4;
+
+  color: var(--color-white);
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+  width: 456px;
+}
+
+.form__heading {
+  font-size: 34px;
+}
+
+.form__input {
+  border-radius: 5px;
+}
+
+.form__input fieldset {
+  border: none;
+}
+
+.form__input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border: 2px solid var(--input-outline-valid);
+}
+
+.form__input--error fieldset {
+  border: 2px solid var(--input-outline-invalid);
+}
+
+.form__input--error p {
+  text-align: right;
+  color: var(--input-outline-invalid);
+}
+
+.form__input label {
+  color: var(--color-white);
+  font-size: 12px;
+
+  border-radius: 5px;
+  padding: 4px 6px;
+  background-color: var(--input-outline-valid);
+}
+
+.form__input--error label {
+  background-color: var(--input-outline-invalid);
+}
+
+.form__input .MuiInputLabel-outlined {
+  color: var(--color-white);
+}
+
+.form__input input {
+  padding: 20px;
+  color: var(--color-white);
+  background-color: #ffffff04;
+
+  border-radius: 5px;
+}
+
+.form__input .MuiInputBase-multiline {
+  padding: 20px;
+  color: var(--color-white);
+  background-color: #ffffff04;
+}
+
+.form__input textarea::placeholder {
+  color: #ffffff28;
+}
+
+.form__input input:hover {
+  border: none;
+}
+
+.form__input input::placeholder {
+  color: #ffffff28;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  gap: 14px;
+
+  font-size: 16px;
+}
+
+.checkbox-wrapper a {
+  color: var(--color-yellow);
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+
+  cursor: default;
+
+  flex-shrink: 0;
+
+  background-color: #ffffff04;
+
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+
+}
+
+@media (max-width: 459px) {
+  .form__container {
+    width: unset;
+  }
+
+  .form__heading {
+    font-size: 24px;
+  }
+
+  .form__input input { 
+    padding: 12px;
+  } 
+
+  .checkbox-wrapper {
+    font-size: 12px;
+  }
+}
