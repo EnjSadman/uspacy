@@ -1,6 +1,6 @@
 "use client"
 
-import global from '../globals.module.css'
+//import global from '../globals.module.css'
 import styles from './styles.module.css';
 
 import Link from 'next/link';
