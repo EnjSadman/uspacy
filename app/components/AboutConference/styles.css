@@ -70,10 +70,6 @@
   }
 }
 
-@media (min-width: 1024px) {
-
-}
-
 @media (min-width: 768px) and (max-width: 1023px) {
   .aboutConference__container {
     margin-top: 36px;
@@ -93,5 +89,30 @@
 
   .aboutConference__text {
     gap: 16px;
+  }
+}
+
+@media (min-height: 800px) {
+  .aboutConference__container {
+    margin-top: 36px;
+  }
+  .aboutConference__text--heading {
+    max-width: unset;
+    font-size: 24px;
+  }
+}
+
+@media (min-height: 600px) and (max-height: 799px) {
+  .aboutConference__container {
+    margin-top: 36px;
+    min-height: 260px;
+  }
+  .aboutConference__text--heading {
+    max-width: unset;
+    font-size: 20px;
+  }
+
+  .aboutConference__text--description {
+    font-size: 16px;
   }
 }
