@@ -1,6 +1,7 @@
 "use client"
 
-import './styles.css';
+import global from '../globals.module.css'
+import styles from './styles.module.css';
 
 import Link from 'next/link';
 import Image from 'next/image';
@@ -9,8 +10,8 @@ import { scrollToAnchor } from '../lib/scrollToAncror';
 
 export function Header() {
   return(
-    <header className='header'>
-      <Container className='header__container'>
+    <header className={styles.header}>
+      <Container className={styles.header__container}>
         <Link
           href={'/'}        
         >

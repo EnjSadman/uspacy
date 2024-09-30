@@ -16,15 +16,3 @@
 
   max-width: 1400px;
 }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-}
-
-@media (min-width: 460px) and (max-width: 767px) {
-
-}
-
-@media (max-width: 459px) {
-
-}

@@ -1,16 +1,16 @@
-import "./styles.css"
+import styles from "./styles.module.css"
 import { Box, Container } from "@mui/material";
 
 export function FixedLine() {
   return (
     <Container
-      className="fixedLine__container manrope-16" 
+      className={`${styles.fixedLine__container} manrope`}
     >
       <p>
         Безкоштовна онлайн-конференція
       </p>
       <Box
-        className="fixedLine__whiteLine" 
+        className={styles.fixedLine__whiteLine} 
         sx={{
           width: "38px",
           height: "2px",
